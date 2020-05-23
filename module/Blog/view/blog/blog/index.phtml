@@ -1,0 +1,20 @@
+<h1>Olá Mundo!</h1>
+
+<ul>
+    <?php foreach ($this->posts as $post): ?>
+        <li><?php echo $post ?></li>
+    <?php endforeach; ?>
+</ul>
+
+<?= $this->htmlList($this->posts) ?>
+
+<?php //print_r($this->categories); ?>
+
+<br>
+<br>
+
+<?php foreach ($this->categories as $category): ?>
+    <?php echo $category['name']; ?><br>
+<?php endforeach; ?>
+
+<?php //print_r($this->categories->getCategories()); ?>
